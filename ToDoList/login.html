@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "Login">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<title>Login</title>
+	</head>
+
+	<body>
+
+		<SCRIPT  language=JavaScript> 
+			function go(){
+				if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO'){ 
+       			 document.form.submit(); 
+    			} 
+    				else{ 
+        					 alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+    				} 
+			} 
+
+
+		</SCRIPT> 
+
+
+		<FORM name=form action="Login.HTML">
+			<img src="Todolist.png" alt="To Do List" class="center">
+			<P align=CENTER> TO DO LIST  
+			<P align=CENTER>Usuario:    <INPUT type=text name=login>
+			<P align=CENTER>Contrasena: <INPUT type=password name=password>
+		
+			<INPUT onclick=go() type=button value=Acceder>
+
+		</FORM> 
+	</body>
+</html>
